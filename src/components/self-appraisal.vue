@@ -1,22 +1,15 @@
 <template>
   <box>
-    <div slot="box-header">
+    <span slot="box-header">
       自我评价
-    </div>
-    <div slot="box-body" style="text-indent: 2em">
-      {{selfAppraisal}}
+    </span>
+    <div slot="box-body" style="text-indent: 2em" v-html="selfAppraisal">
     </div>
   </box>
 </template>
 
 <script>
-  import resumeData from "../data";
-
   export default {
-    data(){
-      return {
-        selfAppraisal: resumeData.selfAppraisal
-      }
-    }
+    props: ["selfAppraisal"]
   }
 </script>

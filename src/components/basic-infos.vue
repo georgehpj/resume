@@ -1,8 +1,8 @@
 <template>
   <box>
-    <div slot="box-header">
+    <span slot="box-header">
       基本资料
-    </div>
+    </span>
     <div slot="box-body" class=" clearfix">
       <div class="float-half" style="padding-bottom: 5px;"
            v-for="info in baseInfos">
@@ -13,13 +13,7 @@
 </template>
 
 <script>
-  import resumeData from "../data";
-
   export default {
-    data(){
-      return {
-        baseInfos: resumeData.baseInfos
-      }
-    }
+    props:["baseInfos"]
   }
 </script>

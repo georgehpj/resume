@@ -1,8 +1,8 @@
 <template>
   <box>
-    <div slot="box-header">
+    <span slot="box-header">
       教育经历
-    </div>
+    </span>
     <div slot="box-body">
       <div v-for="education in educations">
         <box innerBox>
@@ -23,13 +23,7 @@
 </template>
 
 <script>
-  import resumeData from "../data";
-
   export default {
-      data(){
-        return {
-          educations: resumeData.educations
-        }
-      }
+    props: ["educations"]
   }
 </script>

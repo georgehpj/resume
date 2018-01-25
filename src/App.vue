@@ -8,6 +8,7 @@
       <projects-experiences></projects-experiences>
       <self-appraisal></self-appraisal>
     </div>
+    <to-pdf></to-pdf>
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import CareerExperiences from "./components/career-experiences.vue";
 import Educations from "./components/educations.vue";
 import ProjectsExperiences from "./components/projects-experiences.vue";
 import SelfAppraisal from "./components/self-appraisal.vue";
+import ToPdf from "./components/toPdf.vue";
 
 export default {
   name: 'App',
@@ -28,6 +30,7 @@ export default {
     Educations,
     ProjectsExperiences,
     SelfAppraisal,
+    ToPdf
   }
 }
 </script>

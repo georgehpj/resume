@@ -37,6 +37,7 @@
     background-color: #3e3e3e;
     position: relative;
     color: #fff;
+    overflow: hidden;
   }
 
   .resume-header {
@@ -64,7 +65,7 @@
   .portrait {
     position: absolute;
     right: 60px;
-    bottom: 15px;
+    bottom: 12px;
   }
 
   .portrait span {
@@ -84,6 +85,6 @@
     bottom: 0;
     height: 100px;
     width: 100%;
-    background: linear-gradient(5deg, #fff 90px, rgba(0, 0, 0, 0.4) 91px, transparent 95px);
+    background: linear-gradient(5deg, #fff 98px, rgba(0, 0, 0, 0.4) 99px, transparent 103px);
   }
 </style>
